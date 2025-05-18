@@ -3,19 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "preinstall": "npx npm@9.8.1 install --legacy-peer-deps || true",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "i18next": "^22.5.1",
+    "lucide-react": "^0.256.0",
     "next": "13.4.12",
+    "next-i18next": "^13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "^3.3.2",
-    "i18next": "22.5.1",
-    "next-i18next": "13.3.0",
-    "react-i18next": "12.2.0",
-    "lucide-react": "^0.256.0"
+    "react-i18next": "^12.2.0",
+    "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
     "typescript": "^5.3.3",
